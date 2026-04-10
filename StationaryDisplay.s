@@ -1,3 +1,4 @@
+.code16
 .section .text
 .globl _start
 
@@ -15,7 +16,6 @@ refresh:
     mov $0x79, %al
     mov $0x641, %dx
     out %al, %dx
-
     mov $0x01, %al
     mov $0x640, %dx
     out %al, %dx
@@ -24,7 +24,6 @@ refresh:
     mov $0x76, %al
     mov $0x641, %dx
     out %al, %dx
-
     mov $0x02, %al
     mov $0x640, %dx
     out %al, %dx
@@ -33,7 +32,6 @@ refresh:
     mov $0x6D, %al
     mov $0x641, %dx
     out %al, %dx
-    
     mov $0x04, %al
     mov $0x640, %dx
     out %al, %dx
